@@ -1,0 +1,26 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, inventory INTEGER, color TEXT, price INTEGER);
+
+INSERT INTO store VALUES (1, 'T-shirt', 100, 'red', 15);
+INSERT INTO store VALUES (2, 'Long sleeve', 100, 'black', 16);
+INSERT INTO store VALUES (3, 'Crew neck', 100, 'purple', 153);
+INSERT INTO store VALUES (4, 'Hoodie', 100, 'grey', 151);
+INSERT INTO store VALUES (5, 'Sweater', 100, 'red', 19);
+INSERT INTO store VALUES (6, 'Cardigan', 100, 'brown', 13);
+INSERT INTO store VALUES (7, 'Vest', 100, 'yello', 18);
+INSERT INTO store VALUES (8, 'Pants', 100, 'black', 20);
+INSERT INTO store VALUES (9, 'Shorts', 100, 'beige', 25);
+INSERT INTO store VALUES (10, 'Socks', 100, 'white', 35);
+INSERT INTO store VALUES (11, 'Socks', 100, 'black', 145);
+INSERT INTO store VALUES (12, 'T-shirt', 100, 'green', 160);
+INSERT INTO store VALUES (13, 'T-shirt', 100, 'blue', 165);
+INSERT INTO store VALUES (14, 'Pants', 100, 'blue', 185);
+INSERT INTO store VALUES (15, 'T-shirt', 100, 'white', 125);
+
+SELECT *
+FROM store
+ORDER BY price;
+
+SELECT AVG(price), MAX (price)
+FROM store
+
+-- Designed a clothing store database which is ordered by price and provides 2 statistics - average price of clothes and the most expensive clothing item. 
